@@ -7,15 +7,17 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header>
-      <h3>Yuyao Ai</h3>
-      <nav>
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#connect">Connect</a></li>
-        </ul>
-      </nav>
+    <header class="web-header">
+      <div class="header-content">
+        <h2>Yuyao Ai</h2>
+        <nav>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#connect">Connect</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main>
       <h1 id="title">Junior Developer</h1>
@@ -37,13 +39,13 @@
               architectures that drive business growth and efficiency.
             </p>
           </div>
-          <img src="image.png" alt="Photo of Me" class="profile-pic" />
+          <img src="images/image.png" alt="Photo of Me" class="profile-pic" />
         </div>
       </section>
 
       <section id="skills">
         <h2>Skills</h2>
-        <p>
+        <p class="skills-list">
           Python, HTML, CSS/SCSS, JavaScript, SQL, AWS and test-driven
           development.
         </p>
@@ -52,17 +54,67 @@
       <section id="projects">
         <h2>Projects</h2>
         <article>
-          <h3>Data Streaming Project</h3>
-          <p>
-            A serverless data pipeline that fetches articles from the Guardian
-            API, processes them, and publishes to an SQS queue using AWS Lambda
-            and Terraform. Only the free tier API key provided by the Guardian
-            is needed. The application is written in python and the articles are
-            published in JSon format.
-          </p>
-          <a href="https://github.com/ailuroken/Data-Streaming-Project">
-            <img src="data-stream.png" alt="View Project" class="data-image" />
-          </a>
+          <div class="project-container">
+            <div class="image-wrapper">
+              <a
+                href="https://github.com/ailuroken/Data-Streaming-Project"
+                target="_blank"
+              >
+                <img
+                  src="images/data-stream.png"
+                  alt="View Project"
+                  class="project-image"
+                />
+              </a>
+            </div>
+
+            <div class="project-text">
+              <h3>Data Streaming Project</h3>
+              <p>
+                A serverless data pipeline that fetches articles from the
+                Guardian API, processes them, and publishes to an SQS queue
+                using AWS Lambda and Terraform. Only the free tier API key
+                provided by the Guardian is needed. The application is written
+                in Python and the articles are published in JSON format.
+              </p>
+            </div>
+          </div>
+        </article>
+        <article>
+          <div class="project-container">
+            <div class="image-wrapper">
+              <a href="" target="_blank">
+                <img
+                  src="images/swe.png"
+                  alt="View Project"
+                  class="project-image"
+                />
+              </a>
+            </div>
+
+            <div class="project-text">
+              <h3>Second Project</h3>
+              <p>Some text.</p>
+            </div>
+          </div>
+        </article>
+        <article>
+          <div class="project-container">
+            <div class="image-wrapper">
+              <a href="" target="_blank">
+                <img
+                  src="images/tech.png"
+                  alt="View Project"
+                  class="project-image"
+                />
+              </a>
+            </div>
+
+            <div class="project-text">
+              <h3>Third Project</h3>
+              <p>Some text.</p>
+            </div>
+          </div>
         </article>
       </section>
 
@@ -70,7 +122,9 @@
         <h2>Connect</h2>
         <p>
           Email:
-          <a href="mailto:aiyuyao2000@gmail.com">aiyuyao2000@gmail.com</a>
+          <a href="mailto:aiyuyao2000@gmail.com" class="email"
+            >aiyuyao2000@gmail.com</a
+          >
         </p>
       </section>
     </main>
