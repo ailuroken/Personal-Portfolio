@@ -2,7 +2,7 @@ $mobile-font-size: 20px;
 $web-font-size: 30px;
 
 * {
-  margin: 0;
+  margin: 10px;
   padding: 0;
   box-sizing: border-box;
 }
@@ -12,6 +12,7 @@ body {
   line-height: 1.6;
   background: #040408;
   color: #dedee7;
+  font-size: $web-font-size;
 }
 
 header,
@@ -21,14 +22,20 @@ footer {
   padding: 1rem;
 }
 
-h3 {
-  align-content: center;
+header h3 {
+  text-align: left;
+  margin: 0 auto;
+}
+
+#title {
+  margin-bottom: 4rem;
 }
 
 nav ul {
   display: flex;
   gap: 1rem;
   list-style: none;
+  justify-content: right;
 }
 
 a {
@@ -40,15 +47,60 @@ a {
   }
 }
 
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.about-text {
+  flex: 1;
+}
+
+.profile-pic {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 15%;
+}
+
+.data-image {
+  width: 400px;
+  transition: transform 0.3s ease;
+  border-radius: 8px;
+  display: block;
+  margin: 0 auto;
+
+  &:hover {
+    transform: scale(0.95);
+    cursor: pointer;
+  }
+}
 @media (max-width: 768px) {
   body {
     font-size: $mobile-font-size;
   }
-}
 
-@media (min-width: 769px) {
-  body {
-    font-size: $web-font-size;
+  nav ul {
+    justify-content: center;
+  }
+
+  .about-content {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .about-text {
+    text-align: left;
+  }
+
+  .profile-pic {
+    max-width: 250px;
+    border-radius: 15%;
+    margin-bottom: 1rem;
   }
 }
 
@@ -73,8 +125,8 @@ footer {
     }
 
     .github-icon {
-      width: 40px;
-      height: 40px;
+      width: 50px;
+      height: 50px;
     }
   }
 }
