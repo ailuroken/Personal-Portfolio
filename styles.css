@@ -212,9 +212,10 @@ a:hover {
     height: 25px !important;
   }
 }
-@media (min-width: 801px) and (max-width: 1810px) {
+@media (min-width: 801px) and (max-width: 1310px) {
   body {
     padding: 0 10px;
+    font-size: 25px;
   }
   nav ul {
     justify-content: center;

@@ -1,4 +1,5 @@
 $mobile-font-size: 15px;
+$medium-font-size: 25px;
 $web-font-size: 35px;
 
 * {
@@ -234,9 +235,10 @@ a {
   }
 }
 
-@media (min-width: 801px) and (max-width: 1810px) {
+@media (min-width: 801px) and (max-width: 1310px) {
   body {
     padding: 0 10px;
+    font-size: $medium-font-size;
   }
   nav ul {
     justify-content: center;
