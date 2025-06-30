@@ -1,6 +1,6 @@
 $mobile-font-size: 15px;
-$medium-font-size: 25px;
-$web-font-size: 35px;
+$medium-font-size: 18px;
+$web-font-size: 20px;
 
 * {
   padding: 0 20px;
@@ -40,7 +40,7 @@ main {
 
 .header-content {
   width: 100%;
-  padding: 0 40px; // Add side padding
+  padding: 0 40px;
 }
 
 .header-content h2 {
@@ -92,18 +92,18 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 2rem;
+    font-size: 1rem;
     color: #dedee7;
 
     .skill-icon {
-      width: 90px;
+      width: 83px;
       filter: invert(1);
       object-fit: contain;
       margin-bottom: 0.5rem;
     }
 
     i {
-      font-size: 3rem;
+      font-size: 2rem;
       margin-bottom: 0.5rem;
     }
 
@@ -204,7 +204,7 @@ a {
     max-width: 300px;
   }
   .web-header {
-    max-height: 150px;
+    max-height: 100px;
   }
 
   .skills-grid {
@@ -240,6 +240,11 @@ a {
     padding: 0 10px;
     font-size: $medium-font-size;
   }
+
+  .web-header {
+    height: 150px;
+  }
+
   nav ul {
     justify-content: center;
   }
@@ -255,13 +260,6 @@ a {
     text-align: center;
   }
 
-  .skill span {
-    font-size: 1.5rem;
-  }
-
-  .skill i {
-    font-size: 2rem;
-  }
   footer {
     height: 90px;
   }

@@ -8,7 +8,7 @@ body {
   line-height: 1.6;
   background: #040408;
   color: #dedee7;
-  font-size: 35px;
+  font-size: 20px;
 }
 
 footer {
@@ -85,17 +85,17 @@ a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 2rem;
+  font-size: 1rem;
   color: #dedee7;
 }
 .skills-section .skill .skill-icon {
-  width: 90px;
+  width: 83px;
   filter: invert(1);
   object-fit: contain;
   margin-bottom: 0.5rem;
 }
 .skills-section .skill i {
-  font-size: 3rem;
+  font-size: 2rem;
   margin-bottom: 0.5rem;
 }
 .skills-section .skill span {
@@ -188,7 +188,7 @@ a:hover {
     max-width: 300px;
   }
   .web-header {
-    max-height: 150px;
+    max-height: 100px;
   }
   .skills-grid {
     padding-left: 0;
@@ -215,7 +215,10 @@ a:hover {
 @media (min-width: 801px) and (max-width: 1310px) {
   body {
     padding: 0 10px;
-    font-size: 25px;
+    font-size: 18px;
+  }
+  .web-header {
+    height: 150px;
   }
   nav ul {
     justify-content: center;
@@ -228,12 +231,6 @@ a:hover {
     flex-direction: column-reverse;
     align-items: center;
     text-align: center;
-  }
-  .skill span {
-    font-size: 1.5rem;
-  }
-  .skill i {
-    font-size: 2rem;
   }
   footer {
     height: 90px;
