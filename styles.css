@@ -8,7 +8,7 @@ body {
   line-height: 1.6;
   background: #040408;
   color: #dedee7;
-  font-size: 30px;
+  font-size: 35px;
 }
 
 footer {
@@ -68,6 +68,40 @@ a:hover {
   text-decoration: underline;
 }
 
+.skills-section {
+  text-align: center;
+  padding: 2rem;
+}
+.skills-section h2 {
+  margin-bottom: 1.5rem;
+}
+.skills-section .skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+.skills-section .skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 2rem;
+  color: #dedee7;
+}
+.skills-section .skill .skill-icon {
+  width: 90px;
+  filter: invert(1);
+  object-fit: contain;
+  margin-bottom: 0.5rem;
+}
+.skills-section .skill i {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+.skills-section .skill span {
+  margin-top: 0.25rem;
+}
+
 .email {
   color: #98b2da;
 }
@@ -112,22 +146,40 @@ a:hover {
   cursor: pointer;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 800px) {
+  html {
+    padding: 0px;
+  }
+  main {
+    padding: 0px;
+  }
+  .project-container {
+    gap: 0px;
+    padding-left: 0;
+    padding-right: 0;
+  }
   body {
-    font-size: 20px;
+    font-size: 15px;
     padding: 0px;
   }
   nav ul {
     justify-content: center;
+    gap: 0rem;
+  }
+  section.about {
+    padding: 0;
   }
   .about-content {
     flex-direction: column-reverse;
     text-align: center;
+    padding-left: 0;
+    padding-right: 0;
   }
   .profile-pic {
     max-width: 250px;
   }
   .project-container {
+    display: flex;
     flex-direction: column-reverse;
     align-items: center;
     text-align: center;
@@ -135,8 +187,32 @@ a:hover {
   .project-image {
     max-width: 300px;
   }
+  .web-header {
+    max-height: 150px;
+  }
+  .skills-grid {
+    padding-left: 0;
+    padding-right: 0;
+    gap: 1rem;
+  }
+  .skills-grid .skill i {
+    font-size: 2rem;
+  }
+  .skills-grid .skill span {
+    font-size: 0.5rem;
+  }
+  section#projects {
+    padding: 0;
+  }
+  footer {
+    height: 50px;
+  }
+  footer a .github-icon {
+    width: 25px !important;
+    height: 25px !important;
+  }
 }
-@media (min-width: 901px) and (max-width: 1810px) {
+@media (min-width: 801px) and (max-width: 1810px) {
   body {
     padding: 0 10px;
   }
@@ -152,6 +228,12 @@ a:hover {
     align-items: center;
     text-align: center;
   }
+  .skill span {
+    font-size: 1.5rem;
+  }
+  .skill i {
+    font-size: 2rem;
+  }
 }
 footer {
   display: flex;
@@ -159,7 +241,7 @@ footer {
   align-items: center;
   gap: 1rem;
   padding: 1rem;
-  background-color: #040408;
+  background-color: #070723;
   color: #dedee7;
 }
 footer a {
@@ -173,6 +255,6 @@ footer a:hover, footer a:focus {
 }
 footer a .github-icon {
   padding: 0px;
-  width: 75px;
-  height: 75px;
+  width: 50px;
+  height: 50px;
 }

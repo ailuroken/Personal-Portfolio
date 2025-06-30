@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Yuyao Ai-Portfolio</title>
     <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
   </head>
   <body>
     <header class="web-header">
@@ -30,11 +34,16 @@
               I am an ambitious and enthusiastic aspiring data engineer with a
               strong foundation in data analysis and engineering, gained through
               completing both data analyst and data engineering bootcamps.
+            </p>
+            <p>
               Throughout this journey, I developed a particular passion for
               back-end development and the challenges of building scalable data
               infrastructures. I’m inspired by data-driven companies because I
               believe that innovation thrives when decisions are informed by
-              data. My long-term goal is to become a leader in data engineering,
+              data.
+            </p>
+            <p>
+              My long-term goal is to become a leader in data engineering,
               overseeing teams that build resilient and dynamic data
               architectures that drive business growth and efficiency.
             </p>
@@ -43,12 +52,35 @@
         </div>
       </section>
 
-      <section id="skills">
+      <section class="skills-section">
         <h2>Skills</h2>
-        <p class="skills-list">
-          Python, HTML, CSS/SCSS, JavaScript, SQL, AWS and test-driven
-          development.
-        </p>
+        <div class="skills-grid">
+          <div class="skill">
+            <i class="devicon-python-plain colored"></i><span>Python</span>
+          </div>
+          <div class="skill">
+            <i class="devicon-html5-plain colored"></i><span>HTML</span>
+          </div>
+          <div class="skill">
+            <i class="devicon-css3-plain colored"></i><span>CSS/SCSS</span>
+          </div>
+          <div class="skill">
+            <i class="devicon-javascript-plain colored"></i
+            ><span>JavaScript</span>
+          </div>
+          <div class="skill">
+            <img src="images/sql-icon.png" alt="SQL icon" class="skill-icon" />
+            <span>SQL</span>
+          </div>
+          <div class="skill">
+            <img src="images/aws-icon.png" alt="AWS icon" class="skill-icon" />
+            <span>AWS</span>
+          </div>
+          <div class="skill">
+            <img src="images/tdd-icon.png" alt="TDD icon" class="skill-icon" />
+            <span>Test-Driven Development</span>
+          </div>
+        </div>
       </section>
 
       <section id="projects">

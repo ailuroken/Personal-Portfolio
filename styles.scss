@@ -1,5 +1,5 @@
-$mobile-font-size: 20px;
-$web-font-size: 30px;
+$mobile-font-size: 15px;
+$web-font-size: 35px;
 
 * {
   padding: 0 20px;
@@ -72,6 +72,46 @@ a {
   }
 }
 
+.skills-section {
+  text-align: center;
+  padding: 2rem;
+
+  h2 {
+    margin-bottom: 1.5rem;
+  }
+
+  .skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2rem;
+    color: #dedee7;
+
+    .skill-icon {
+      width: 90px;
+      filter: invert(1);
+      object-fit: contain;
+      margin-bottom: 0.5rem;
+    }
+
+    i {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+
+    span {
+      margin-top: 0.25rem;
+    }
+  }
+}
+
 .email {
   color: #98b2da;
 }
@@ -116,7 +156,19 @@ a {
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 800px) {
+  html {
+    padding: 0px;
+  }
+
+  main {
+    padding: 0px;
+  }
+  .project-container {
+    gap: 0px;
+    padding-left: 0;
+    padding-right: 0;
+  }
   body {
     font-size: $mobile-font-size;
     padding: 0px;
@@ -124,11 +176,16 @@ a {
 
   nav ul {
     justify-content: center;
+    gap: 0rem;
   }
-
+  section.about {
+    padding: 0;
+  }
   .about-content {
     flex-direction: column-reverse;
     text-align: center;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .profile-pic {
@@ -136,6 +193,7 @@ a {
   }
 
   .project-container {
+    display: flex;
     flex-direction: column-reverse;
     align-items: center;
     text-align: center;
@@ -144,9 +202,39 @@ a {
   .project-image {
     max-width: 300px;
   }
+  .web-header {
+    max-height: 150px;
+  }
+
+  .skills-grid {
+    padding-left: 0;
+    padding-right: 0;
+    gap: 1rem;
+
+    .skill i {
+      font-size: 2rem;
+    }
+
+    .skill span {
+      font-size: 0.5rem;
+    }
+  }
+  section#projects {
+    padding: 0;
+  }
+
+  footer {
+    height: 50px;
+    a {
+      .github-icon {
+        width: 25px !important;
+        height: 25px !important;
+      }
+    }
+  }
 }
 
-@media (min-width: 901px) and (max-width: 1810px) {
+@media (min-width: 801px) and (max-width: 1810px) {
   body {
     padding: 0 10px;
   }
@@ -164,6 +252,14 @@ a {
     align-items: center;
     text-align: center;
   }
+
+  .skill span {
+    font-size: 1.5rem;
+  }
+
+  .skill i {
+    font-size: 2rem;
+  }
 }
 
 footer {
@@ -172,7 +268,7 @@ footer {
   align-items: center;
   gap: 1rem;
   padding: 1rem;
-  background-color: #040408;
+  background-color: #070723;
   color: #dedee7;
 
   a {
@@ -188,8 +284,8 @@ footer {
 
     .github-icon {
       padding: 0px;
-      width: 75px;
-      height: 75px;
+      width: 50px;
+      height: 50px;
     }
   }
 }
